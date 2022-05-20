@@ -1,0 +1,28 @@
+@media screen and (max-width:670px){
+
+   
+
+   .container{
+       position: relative;
+       left: 00px;
+       display: flex;
+       flex-direction: column;
+   }
+
+
+   .checkbox-twitter:checked ~ .card-twitter{        
+        width: 300px; 
+    }
+    .checkbox-instagram:checked ~ .card-instagram{        
+        width: 300px;
+    }
+    .checkbox-youtube:checked ~ .card-youtube{        
+        width: 300px;
+    }
+    .modonoturno:checked ~ .check{
+        box-shadow: 0 0 0 2200px rgba(58, 58, 58, 0.55);
+        background-color: rgba(255, 255, 255, 0.856);
+    }
+    
+  
+}

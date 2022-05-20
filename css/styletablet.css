@@ -1,0 +1,113 @@
+@media screen and (max-width:1237px)
+
+{
+    
+    .card-twitter,.card-youtube,.card-instagram{
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        width: 250px;
+        height: 600px;
+        background-color: white;
+        border: 5px solid black;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        transition: 2s;
+        border-radius: 50px;
+
+    }
+      
+.card-twitter button{
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+
+.card-youtube button{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+
+
+
+.card-instagram button{
+    width: 200px;
+    height: 100px;
+    background-color: #97549d;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+        
+    
+}
+@media screen and (max-width:1137px)
+
+{
+    
+    
+    .card-twitter,.card-youtube,.card-instagram{
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        width: 200px;
+        height: 650px;
+        background-color: white;
+        border: 5px solid black;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        transition: 2s;
+        border-radius: 50px;
+
+        
+    }
+
+  
+
+}
+
+@media screen and (max-width:1153px)
+
+{
+    .container{
+        gap:140px;
+    }
+    
+
+}
+
+@media screen and (max-width:1103px)
+
+{
+    .container{
+        gap:90px;
+    }
+    
+
+}
+
+
+@media screen and (max-width:993px)
+
+{
+    .container{
+        gap:0px;
+    }
+    
+
+}

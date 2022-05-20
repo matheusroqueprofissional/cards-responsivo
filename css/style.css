@@ -1,0 +1,386 @@
+/*resetando body*/
+
+body{
+    background-color: white;
+    border: 0;
+    align-items: center;
+    justify-items:center;
+    justify-content: center;
+    
+}
+
+/*definindo tamanho do botao*/
+button{
+    font-size: 24px;
+}
+
+/*definindo tamanho dos titulos dentro dos quadrados(twitter instagram youtube)*/
+h1{
+    width: 100%;
+    color: black;
+    font-family: 'Roboto',sans-serif;
+}
+/*titulo principal da pagina*/
+.title-page{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: default;
+    transition: 2s;
+    
+}
+.title-page:hover{
+    transform: rotatex(360deg);
+    color: yellow;
+    
+}
+
+/*alinhando conteudo*/
+.container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 150px;
+}
+
+/*estilizando os 3 cards*/
+.card-twitter,.card-youtube,.card-instagram{
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    border: 5px solid black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transition: 2s;
+    border-radius: 50px;
+    
+}
+/*definindo tamanho da imagem*/
+.imagem{
+    width:100px;
+    position:relative;
+    padding: 20px 0px 0px 12px;
+    
+}
+/*a imagem do instagram teve que ser diferente*/
+.imagem-instagram{
+    width:80px;
+    position:relative;
+    padding: 20px 0px 0px 12px;
+    
+}
+
+/*estilizando texto que aparece abaixo do nome dos cards*/
+.intro{
+    width:100%;
+    font-weight: 400,bold;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+}
+
+/*estilizando botoes twitter youtube instagram*/
+
+.card-twitter button{
+    width: 300px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+
+.card-youtube button{
+    width: 300px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+
+
+
+.card-instagram button{
+    width: 300px;
+    height: 50px;
+    background-color: #97549d;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+
+.card-twitter button:hover{
+  
+    background-color: aqua;
+    border: rgb(0, 0, 0) 5px solid;
+}
+
+.card-youtube button:hover{
+  
+    background-color: red;
+    border: rgb(0, 0, 0) 5px solid;
+}
+
+.card-instagram button:hover{
+  
+    background-color: #97549d;
+    border: rgb(0, 0, 0) 5px solid;
+}
+
+
+
+
+
+
+/* checkbox e efeitos twitter */
+
+.checkbox-twitter{
+    display: none;
+}
+
+
+.checkbox-twitter:checked ~ .card-twitter
+{
+    
+background-color: aqua;
+}
+
+
+
+
+.card-twitter:hover{
+    background-color: rgb(0, 255, 255,0.284); 
+    }
+    
+    .card-twitter:hover button{
+        background-color: #ffffff;  transition: 1s;;
+        }
+
+.checkbox-twitter:checked ~ .card-twitter button
+{
+    
+background-color: white;
+}
+
+
+.checkbox-twitter:checked ~ .card-twitter button:hover
+{
+    
+border: black 5px solid;
+}
+
+
+
+/* checkbox e efeitos instagram*/
+
+
+.checkbox-instagram{
+    display: none;
+}
+
+
+.checkbox-instagram:checked ~ .card-instagram
+{
+    animation: animacaoinsta;
+    animation-duration: 2s;
+background-image: linear-gradient(#97549d,#f9c066);  
+
+
+
+}
+.card-instagram:hover{
+background-color: rgba(151, 84, 157, 0.284);  ;
+}
+
+.card-instagram:hover button{
+    background-color: #ffffff;  transition: 1s;;
+    }
+    
+
+.checkbox-instagram:checked ~ .card-instagram button
+{
+    
+background-color: white;
+}
+
+
+.checkbox-instagram:checked ~ .card-instagram button:hover
+{
+    
+border: black 5px solid;
+}
+
+
+
+
+/* checkbox e efeitos youtube */
+
+.checkbox-youtube{
+    display: none;
+}
+
+
+.checkbox-youtube:checked ~ .card-youtube
+{
+    
+background-color: rgb(153, 15, 15);
+}
+.card-youtube:hover{
+    background-color: rgba(255, 0, 0, 0.284);  
+    }
+    
+    .card-youtube:hover button{
+        background-color: #ffffff;
+        transition: 1s;
+        }
+.checkbox-youtube:checked ~ .card-youtube button
+{
+    
+background-color: white;
+}
+
+
+.checkbox-youtube:checked ~ .card-youtube button:hover
+{
+    
+border: black 5px solid;
+}
+
+
+/*aumentando tamanho dos cards quando checados*/
+
+.checkbox-twitter:checked ~ .card-twitter
+{
+    
+width: 400px;
+height: 500px;
+}
+.checkbox-youtube:checked ~ .card-youtube
+{
+transform: rotate(360deg);    
+width: 400px;
+height: 500px;
+}
+.checkbox-instagram:checked ~ .card-instagram
+{
+transform: rotatey(360deg);
+width: 400px;
+height: 500px;
+}
+
+/*alterando fonte dos cards quando checados*/
+
+.checkbox-twitter:checked ~ .card-twitter p
+{
+    
+    font-weight: 900;
+}
+.checkbox-youtube:checked ~ .card-youtube p
+{
+    
+    font-weight: 900;
+}
+.checkbox-instagram:checked ~ .card-instagram p
+{
+    
+    font-weight: 900;
+}
+
+/*botao alterar tema*/
+
+.container2{
+    width: 100%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+/*nao permitindo aparecer o quadrado do checkbox*/
+input[type = "checkbox"]{
+    display: none;
+}
+
+/*
+estilizando o corpo do checkbox
+*/
+.check{
+    cursor: pointer;
+    background-color: rgb(58, 58, 58);
+    width: 120px;
+    height: 60px;
+    position: relative;
+    bottom: 10px;
+    border-radius: 50px;
+    display: flex;
+    transition: 0.5s ease-out;
+    
+    align-items: center;
+    
+}
+
+/*
+estilizando efeito quando checkbox pressionado
+*/
+.modonoturno:checked ~ .check{
+    box-shadow: 0 0 0 1200px rgba(58, 58, 58, 0.55);
+    background-color: rgba(255, 255, 255, 0.856);
+}
+
+
+/*
+estilizando circulo(dourado) do checkbox
+*/
+.check::after{
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255);
+    display: block;
+    position: absolute;
+    border-radius: 100px;
+    transition: 0.5s;
+    transform: translateX(0px);
+}
+
+/*
+estilizando circulo quando checkbox for pressionado
+*/
+.modonoturno:checked ~ .check::after{
+    transform: translatex(70px);
+    background-color: rgba(58, 58, 58)
+}
+
+
+
+/*header*/
+
+header{
+    text-transform: uppercase;
+    width: 100%;
+    position: relative;
+    display: flex;
+    top: 0px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+}
